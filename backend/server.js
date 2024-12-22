@@ -6,12 +6,12 @@ require("dotenv").config();
 
 const prisma = new PrismaClient();
 const app = express();
-app.use(cors({
+app.use(cors(/*{
   origin: "http://localhost:5173",
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
-}));
+}*/));
 
 app.use(express.json());
 
